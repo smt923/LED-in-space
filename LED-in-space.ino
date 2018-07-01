@@ -20,7 +20,7 @@
 // LED pin for our LED
 #define ledPin 3
 
-// Set up the OIS object from the ArduinosInSpace class
+// Set up the OIS object from the ArduinosInSpace library
 ObjectsInSpace OIS(Serial, 1);
 
 void setup() {
@@ -41,11 +41,11 @@ void setup() {
 }
 
 void loop() {
-    // Processes any incoming data for us
+    // Asks our object to process any incoming data for us
     OIS.update();
 }
 
-// The callback function itself
+// The callback function we registered in setup
 void emconCallback(int channel, bool data) {
     if (data == 0) {
         // normal operation
