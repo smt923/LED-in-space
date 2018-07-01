@@ -1,10 +1,10 @@
 /*
     LEDs in Space
 
-    A short example program to control an LED in Obejects in Space - flashing it
+    A short example program to control an LED in Objects in Space - flashing it
     when entering EMCON mode, using the ArduinosInSpace library.
 
-    For more info on the protocol itself or the things you can do, check out:
+    For more info on the protocol itself or the things you can do, check out:   
     the wiki: https://oiswiki.sysadninjas.net/wiki/Category:HardwareInterfacing
     or the official website: http://objectsgame.com/the-controllers/ois-serial-data-protocol/
 
@@ -29,10 +29,10 @@ void setup() {
 
     // Setup for serial connection
     Serial.begin(9600);
-    // tell our object to start handshaking with the game
+    // Tell our object to start handshaking with the game
     OIS.begin();
 
-    // register callback for the bool request 'EMCON_MODE'
+    // Register callback for the bool request 'EMCON_MODE'
     // this will make sure we're recieving information on the EMCON status
     OIS.registerBool(EMCON_MODE, emconCallback);
 
@@ -45,7 +45,7 @@ void loop() {
     OIS.update();
 }
 
-// the callback function itself
+// The callback function itself
 void emconCallback(int channel, bool data) {
     if (data == 0) {
         // normal operation
@@ -58,7 +58,7 @@ void emconCallback(int channel, bool data) {
     }
 }
 
-// simple function to flash our LED num times
+// Simple function to flash our LED 'num' times
 void flashLED(int num) {
     for (int i = 0; i <= num; i++) {
         digitalWrite(ledPin, LOW);
