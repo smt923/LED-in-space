@@ -1,6 +1,6 @@
 # LED-in-space
 
-Small example Arduino code for making an LED flash in the game Objects in Space
+Small example Arduino code for making an LED flash in the game Objects in Space, this readme contains some little tips but the code is commented to try and explain what it's doing.
 
 ## Info
 
