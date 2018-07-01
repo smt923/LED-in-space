@@ -4,7 +4,7 @@ Small example Arduino code for making an LED flash in the game Objects in Space,
 
 ## Info
 
-Uses an Arduino Uno, LED and resistor for hardware
+Uses an Arduino, LED and resistor for hardware
 
 The [ArduinosInSpace library](https://bitbucket.org/pjhardy/arduinosinspace/src/master/) makes it all very simple
 
@@ -12,9 +12,9 @@ This is just a very simple starting point to help get something working
 
 ## Tips/Hints for getting started
 
-* You'll have to add `hardware=true` and possibly `ignorecom12=true` on Windows to your configuration file, which for me on is located `steamapps\common\Objects in Space\ObjectsInSpace` - [more info here](https://oiswiki.sysadninjas.net/wiki/Getting_started_with_hardware)
+* You'll have to add `hardware=true` and possibly `ignorecom12=true` on Windows to your configuration file, which for me is located `steamapps\common\Objects in Space\ObjectsInSpace` - [more info here](https://oiswiki.sysadninjas.net/wiki/Getting_started_with_hardware)
 
-* Follow the instructions to get the library set up on the ArduinosInSpace repo above
+* Follow the instructions to get the library set up on the ArduinosInSpace repo linked above in the info section
 
 * Don't leave the serial monitor on, or anything else that accesses the Arduino over usb/serial so that the game can access it
 
